@@ -13,9 +13,10 @@
            {{ $lastUpdateDate }} - {{ $lastUpdateTime }}
         </p>
 
-        <div class="flex flex-row justify-between">
-            <div class="flex flex-col w-1/3">
-                <div class="font-small text-xs text-center"></div>
+        <div class="flex flex-row justify-center">
+            <div class="flex flex-col w-100 justify-center">
+                <div class="font-small text-xs h-10 w-10 rounded-full mb-3 ml-auto mr-auto
+                            @if($state['message']=='Site is up.') bg-green-700 @else bg-red-700 @endif"></div>
                 <div class="font-small text-xs text-center">{{ $state['message'] }}</div>
             </div>
         </div>
