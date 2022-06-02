@@ -11,7 +11,7 @@ class UptimeAPI
 
       $response = Http::withHeaders([
         'x-api-key' => $key,
-      ])->post('https://api.geekflare.com/brokenlink', [
+      ])->post('https://api.geekflare.com/up', [
         'url' => $url,
       ])->json();
 
