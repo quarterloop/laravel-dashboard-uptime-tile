@@ -23,7 +23,7 @@ class UptimeTileComponent extends Component
 
         return view('dashboard-uptime-tile::tile', [
             'website'         => config('dashboard.tiles.hosting.url'),
-
+            'state'           => $uptimeStore->getData(),
             'lastUpdateTime'  => date('H:i:s', strtotime($uptimeStore->getLastUpdateTime())),
             'lastUpdateDate'  => date('d.m.Y', strtotime($uptimeStore->getLastUpdateDate())),
         ]);
