@@ -19,7 +19,7 @@ class FetchUptimeCommand extends Command
 
         $uptime = $uptime_api::getUptime(
             config('dashboard.tiles.hosting.url'),
-            config('dashboard.tiles.uptime.key'),
+            config('dashboard.tiles.geekflare.key'),
         );
 
         UptimeStore::make()->setData($uptime);
