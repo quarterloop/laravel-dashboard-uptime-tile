@@ -5,6 +5,7 @@ namespace Quarterloop\UptimeTile\Commands;
 use Illuminate\Console\Command;
 use Quarterloop\UptimeTile\Services\UptimeAPI;
 use Quarterloop\UptimeTile\UptimeStore;
+use Session;
 
 class FetchUptimeCommand extends Command
 {
@@ -18,7 +19,7 @@ class FetchUptimeCommand extends Command
         $this->info('Fetching uptime data ...');
 
         $uptime = $uptime_api::getUptime(
-            config('dashboard.tiles.hosting.url'),
+            Session::get('website'),
             config('dashboard.tiles.geekflare.key'),
         );
 
