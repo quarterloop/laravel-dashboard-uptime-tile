@@ -7,7 +7,7 @@
           </svg>
         </a>
 
-        <h1 class="font-medium text-dimmed text-sm uppercase tracking-wide tabular-nums text-center">Link Check</h1>
+        <h1 class="font-medium text-dimmed text-sm uppercase tracking-wide tabular-nums text-center">Online?</h1>
         <p class="text-dimmed lowercase tracking-wide tabular-nums text-center mr-auto ml-auto mb-3 w-full"
            style="font-size: 12px;">
            {{ $lastUpdateDate }} - {{ $lastUpdateTime }}
